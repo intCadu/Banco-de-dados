@@ -1,19 +1,19 @@
 {
     "funcionario":[
-        {"ID_Funcionario":"001", "Nome_Funcionario": "Carlos", "CPF_Funcionario": "00001"},
-        {"ID_Funcionario":"002", "Nome_Funcionario": "Maicon", "CPF_Funcionario": "00002"},
-        {"ID_Funcionario":"003", "Nome_Funcionario": "Caio", "CPF_Funcionario": "00003"},
-        {"ID_Funcionario":"004", "Nome_Funcionario": "Daniel", "CPF_Funcionario": "00004"},
-        {"ID_Funcionario":"005", "Nome_Funcionario": "Eduardo", "CPF_Funcionario": "00005"},
-        {"ID_Funcionario":"006", "Nome_Funcionario": "Mateus", "CPF_Funcionario": "00006"},
-        {"ID_Funcionario":"007", "Nome_Funcionario": "Luis", "CPF_Funcionario": "00007"},
-        {"ID_Funcionario":"008", "Nome_Funcionario": "Luiz", "CPF_Funcionario": "00008"},
-        {"ID_Funcionario":"009", "Nome_Funcionario": "André", "CPF_Funcionario": "00009"},
-        {"ID_Funcionario":"010", "Nome_Funcionario": "Fernando", "CPF_Funcionario": "00010"}
+        {"ID_Funcionario": 1, "Nome_Funcionario": "Carlos", "CPF_Funcionario": "001"},
+        {"ID_Funcionario": 2, "Nome_Funcionario": "Maicon", "CPF_Funcionario": "002"},
+        {"ID_Funcionario": 3, "Nome_Funcionario": "Caio", "CPF_Funcionario": "003"},
+        {"ID_Funcionario": 4, "Nome_Funcionario": "Daniel", "CPF_Funcionario": "004"},
+        {"ID_Funcionario": 5, "Nome_Funcionario": "Eduardo", "CPF_Funcionario": "005"},
+        {"ID_Funcionario": 6, "Nome_Funcionario": "Mateus", "CPF_Funcionario": "006"},
+        {"ID_Funcionario": 7, "Nome_Funcionario": "Luis", "CPF_Funcionario": "007"},
+        {"ID_Funcionario": 8, "Nome_Funcionario": "Luiz", "CPF_Funcionario": "008"},
+        {"ID_Funcionario": 9, "Nome_Funcionario": "André", "CPF_Funcionario": "009"},
+        {"ID_Funcionario": 10, "Nome_Funcionario": "Fernando", "CPF_Funcionario": "010"}
     ],
     
     "departamento": [
-        {"ID_Departamento": "001", "Funcao_Departamento": "R.H.", "ID_Chefe": "00011"},
-        {"ID_Departamento": "002", "Funcao_Departamento": "Engenharia", "ID_Chefe": "00011"}
+        {"ID_Departamento": 1, "Funcao_Departamento": "R.H.", "ID_Chefe": 1},
+        {"ID_Departamento": 2, "Funcao_Departamento": "Engenharia", "ID_Chefe": 10}
     ]
 }

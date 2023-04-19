@@ -7,22 +7,22 @@ try:
     print("Conectado com sucesso")
 
     # cursor.execute('''
-    # create table "Alunos"(
+    # create table "Matricula"(
     # "Nro_Matricula" serial,
-    # "Nome" varchar(255) NOT NULL,
-    # "CPF" char(11) NOT NULL,
-    # "Endereço" varchar(255) default 'Não informado',
-    # "Telefone" char(11) default 'xx-xxx',
-    # "Ano Nascimento" integer,
+    # "Cod_Disciplina" integer NOT NULL,
+    # "Semestre" integer default 0,
+    # "Ano" integer default '2023',
+    # "Nota" numeric(2) default 0,
+    # "Nro_Faltas" integer default 0,
     # Primary Key ("Nro_Matricula")
     # )
     # ''')
 
-    # conn.commit()
     cursor.execute('''
-    insert into "Alunos"
-    values (default, 'Fernando', '12345678910', default, default, 2010)
+    insert into "Matricula"
+    values (default, '2', default, '2001', '8', default)
     ''')
+   
     conn.commit()
 
     conn.close()

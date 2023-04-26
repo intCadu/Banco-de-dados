@@ -1,6 +1,6 @@
 import psycopg2
 
-def creteTableFuncionario():
+def createTableFuncionario():
     sql = ('''
     Create Table "Funcionário"(
     "ID_Funcionario" integer GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -30,19 +30,27 @@ def createTableDepartamento():
     return sql
 
 def consultarFuncionario(id):
-    cursor.execute(f'''
+    sql = (f'''
     Select * From "Funcionário"
     Where "Nome_Func" = {id}''')
 
+    return sql
 
+def inserirFuncionario():
 
-
+    sql = (f'''
+    Insert into "Funcionário"
+    Values (default, 'Cadu', '12345678910', '5000', default)
+    ''')
+    return sql
 
 try:
 
     conn = psycopg2.connect(dbname = "NovaEmpresa", host = "localhost", port = "5432", user = "postgres", password = "postgres")
     cursor = conn.cursor()
     print("Conectado com sucesso")  
+
+    cursor.execute(inserirFuncionario())
 
     conn.commit()
     conn.close()
